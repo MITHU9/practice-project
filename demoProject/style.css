@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #dfdfdf;
+}
+
+#navbar {
+  width: 310px;
+  height: 100%;
+  border-right: 3px solid #4f4e4e;
+  position: fixed;
+}
+.navHead {
+  margin-left: 20px;
+  padding: 15px;
+  padding-left: 15px;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+.navItem > li {
+  border-top: 1px solid #474545;
+  padding: 7px;
+  margin-top: 8px;
+  list-style: none;
+}
+.navItem > li > a {
+  text-decoration: none;
+  color: #4d4e53;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.document {
+  width: calc(100% - 310px);
+  padding: 40px 20px 0 40px;
+  position: relative;
+  float: right;
+}
+article {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #5b5c5f;
+  padding: 10px 0 0 0;
+}
+.introList {
+  margin-left: 4rem;
+}
+.introduced {
+  font-weight: 200;
+  font-size: 2rem;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
+.listSection {
+  margin-left: 50px;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #5b5c5f;
+}
+.heading {
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 25px 0 10px -10px;
+}
+.codeDiv {
+  width: 100%;
+  height: fit-content;
+  background-color: #d9d9d9;
+  color: #5b5c5f;
+  font-size: 0.8rem;
+  font-family: monospace;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.refer {
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) and (min-width: 769px) {
+  #navbar {
+    width: 300px;
+  }
+  .document {
+    width: calc(100% - 300px);
+  }
+}
