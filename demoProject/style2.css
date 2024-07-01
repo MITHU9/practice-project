@@ -1,10 +1,12 @@
+/* Position Property-Practice.. */
 .parent {
-  border: 1px solid green;
-  height: 200px;
-  width: 600px;
   margin: 100px;
-  padding: 40px;
-  position: absolute;
+  width: 70%;
+  height: 300px;
+  background-color: rgb(216, 203, 186);
+  position: relative;
+  text-align: center;
+  padding: 20px;
 }
 
 #display1 {
@@ -13,6 +15,7 @@
   background-color: aqua;
   height: 100px;
   display: inline-block;
+  position: relative;
 }
 #display2 {
   border: 1px solid red;
@@ -20,9 +23,9 @@
   background-color: rgb(0, 26, 255);
   height: 100px;
   display: inline-block;
-  position: absolute;
-  top: 150px;
-  left: 50px;
+  position: relative;
+  top: 50px;
+  left: -50px;
 }
 #display3 {
   border: 1px solid red;
@@ -30,6 +33,9 @@
   background-color: rgb(0, 255, 26);
   height: 100px;
   display: inline-block;
+  position: relative;
+  top: 100px;
+  left: -100px;
 }
 #display4 {
   border: 1px solid red;
@@ -37,4 +43,35 @@
   background-color: rgb(195, 0, 255);
   height: 100px;
   display: inline-block;
+  position: relative;
+  top: 150px;
+  left: -150px;
+}
+
+/* Flexbox-Practice.. */
+.parent2 {
+  margin-top: 200px;
+  background-color: aquamarine;
+  display: flex;
+  height: 400px;
+}
+.flex-item {
+  width: 100px;
+  background-color: antiquewhite;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+#flex1 {
+  align-self: flex-start;
+}
+#flex2 {
+  align-self: center;
+}
+#flex3 {
+  align-self: flex-end;
+}
+#flex4 {
+  align-self: flex-end;
 }
