@@ -39,7 +39,7 @@ const updateExchangeRate = async () => {
     amount.value = amtVal;
   }
   //console.log(fromCurr.value, toCurr.value);
-  const URL = `https://v6.exchangerate-api.com/v6/3a21e3902d5134293790ddde/latest/${fromCurr.value}`;
+  const URL = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${fromCurr.value}`;
   let response = await fetch(URL);
   let data = await response.json();
 
