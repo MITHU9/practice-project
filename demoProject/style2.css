@@ -50,7 +50,7 @@
 
 /* Flexbox-Practice.. */
 .parent2 {
-  margin-top: 200px;
+  margin-top: 100px;
   background-color: aquamarine;
   display: flex;
   height: 400px;
@@ -74,4 +74,38 @@
 }
 #flex4 {
   align-self: flex-end;
+}
+
+/* Grid Layout-Practice.. */
+.grid-container {
+  background-color: beige;
+  margin-top: 50px;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+}
+.grid-item {
+  background-color: rgba(221, 216, 216, 0.961);
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+#grid-1 {
+  grid-area: header;
+}
+#grid-2 {
+  grid-area: menu;
+}
+#grid-3 {
+  grid-area: main;
+}
+#grid-4 {
+  grid-area: right;
+}
+#grid-5 {
+  grid-area: footer;
 }
