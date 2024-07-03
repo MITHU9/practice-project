@@ -14,7 +14,7 @@ h1 {
   font-size: 2rem;
   color: white;
 }
-#textBox {
+#text-box {
   width: 50vw;
   margin-top: -21px;
   border: 1px solid rgb(18, 125, 212);
@@ -25,11 +25,12 @@ h1 {
   outline: none;
 }
 p {
+  width: 50vw;
   background-color: rgb(17, 147, 212);
   font-size: 1.3rem;
   font-weight: 500;
   margin-top: -10px;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
