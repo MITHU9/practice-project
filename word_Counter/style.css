@@ -1,0 +1,35 @@
+body {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+}
+.center {
+  width: 51vw;
+  text-align: center;
+}
+h1 {
+  width: 50vw;
+  background-color: rgb(17, 147, 212);
+  padding: 10px;
+  font-size: 2rem;
+  color: white;
+}
+#textBox {
+  width: 50vw;
+  margin-top: -21px;
+  border: 1px solid rgb(18, 125, 212);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  outline: none;
+}
+p {
+  background-color: rgb(17, 147, 212);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: -10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
