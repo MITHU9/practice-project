@@ -22,3 +22,39 @@ for (let x of str) {
   }
 }
 console.log(count);
+
+//! Spread Operator...
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+let combinedArr = [...arr1, ...arr2];
+console.log(combinedArr);
+
+//! Array Destructuring...
+
+let book = ["Advance JS", 200, 150];
+
+let [title, price, copies] = book;
+
+console.log(title, price, copies);
+
+function books() {
+  //? do something...
+  return ["Advance JS", 500, 200];
+}
+
+let [book_title, page, prices] = books();
+console.log(book_title, page, prices);
+
+//! Object Destructuring...
+
+let person = {
+  name: "John",
+  age: 30,
+  city: "New York",
+};
+
+let { name: nam, age, city } = person;
+
+console.log(nam, age, city);
