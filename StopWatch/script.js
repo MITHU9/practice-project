@@ -62,6 +62,6 @@ function stopwatch() {
     document.querySelector("#min").innerHTML = minStr;
     document.querySelector("#hr").innerHTML = hrStr;
 
-    setTimeout("stopwatch()", 10);
+    setTimeout(stopwatch, 10);
   }
 }
