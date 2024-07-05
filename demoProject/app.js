@@ -58,3 +58,45 @@ let person = {
 let { name: nam, age, city } = person;
 
 console.log(nam, age, city);
+
+//! Web Storages...
+
+localStorage.setItem("name", "John Doe");
+localStorage.setItem("age", 30);
+localStorage.setItem("city", "New York");
+
+sessionStorage.setItem("age", 30);
+
+localStorage.removeItem("age");
+console.log(localStorage.getItem("name"));
+
+//! JSON Files Practices.....
+let jsonData = `
+{
+  "name": "Mithu",
+  "age": 25,
+  "isStudent": true,
+  "department": "CSE",
+  "passport_no": null,
+  "subjects": ["Math", "Science", "English"],
+  "hobbies": ["Reading", "Running", "Traveling"],
+  "address": {
+    "street": "123 Main St",
+    "city": "Dhaka",
+    "country": "Bangladesh"
+  }
+}`;
+
+let jsonObject = JSON.parse(jsonData); //? Return a JSON object..
+
+console.log(jsonObject.hobbies);
+
+//! Send JSON Data to the server.....
+let student = {
+  name: "John Doe",
+  age: 20,
+  city: "New York",
+};
+
+let jData = JSON.stringify(student); //? Return a JSON string..
+console.log(jData);

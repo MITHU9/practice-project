@@ -1,0 +1,14 @@
+{
+  "name": "Mithu",
+  "age": 25,
+  "isStudent": true,
+  "department": "CSE",
+  "passport_no": null,
+  "subjects": ["Math", "Science", "English"],
+  "hobbies": ["Reading", "Running", "Traveling"],
+  "address": {
+    "street": "123 Main St",
+    "city": "Pabna",
+    "country": "Bangladesh"
+  }
+}
