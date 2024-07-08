@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 37, 37);
+  color: white;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.card {
+  min-width: 35%;
+  min-height: 60vh;
+  background-color: rgb(25, 26, 53);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 5px 10px 5px rgb(19, 3, 49);
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 5px 10px 5px rgb(107, 105, 105);
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#taskInput {
+  min-width: 80%;
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(186, 186, 171);
+}
+.submit-btn {
+  min-width: 19%;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-left: 5px;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(231, 147, 43);
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: white;
+  color: black;
+}
+.list-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 8px;
+  background-color: rgb(56, 54, 54);
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.list-style:hover {
+  background-color: rgb(36, 36, 34);
+}
+.task-add {
+  margin: 0.5rem 0px;
+  padding: 0.5rem;
+  border-left: 5px solid rgb(21, 128, 26);
+  color: black;
+  background-color: rgb(166, 204, 117);
+}
+.task-delete {
+  margin: 0.5rem 0px;
+  padding: 0.5rem;
+  border-left: 5px solid rgb(175, 24, 4);
+  color: black;
+  background-color: rgb(212, 152, 152);
+}
