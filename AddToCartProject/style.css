@@ -162,6 +162,9 @@ header {
   .products .item {
     margin-bottom: 20px;
   }
+  .active .cart {
+    left: calc(100% - 385px);
+  }
 }
 
 @media only screen and (max-width: 800px) {
