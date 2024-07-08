@@ -20,12 +20,15 @@ h2 {
 }
 .card {
   min-width: 35%;
-  min-height: 60vh;
+  height: 70vh;
   background-color: rgb(25, 26, 53);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 10px 5px 10px 5px rgb(19, 3, 49);
   transition: all 0.3s;
+}
+.card-scroll {
+  overflow-y: scroll;
 }
 .card:hover {
   transform: scale(1.05);

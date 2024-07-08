@@ -1,5 +1,6 @@
 import { Task } from "./Classes/Task.js";
-// const card = document.querySelector(".card");
+
+const card = document.querySelector(".card");
 const form = document.querySelector(".form");
 const btn = document.querySelector("#addTaskBtn");
 const input = document.querySelector("#taskInput");
@@ -15,6 +16,14 @@ const showMsg = (text, status) => {
     msg.classList.remove(`task-${status}`);
   }, 1000);
 };
+//! Showing Scrolling....
+const showScroll = () => {
+  if (list.children.length >= 9) {
+    card.classList.add("card-scroll");
+  } else {
+    card.classList.remove("card-scroll");
+  }
+};
 
 //! Creating a new Task.....
 const createTodo = (newTask) => {
@@ -24,6 +33,7 @@ const createTodo = (newTask) => {
   li.innerHTML = `<span>${newTask.value}</span>
   <span><button class="submit-btn" id="delete"><i class="fa fa-trash"></i></button></span>`;
   list.appendChild(li);
+  showScroll();
   li.querySelector("#delete").addEventListener("click", deleteTask);
 };
 
@@ -33,7 +43,7 @@ const deleteTask = (event) => {
   //console.log(selectedTask);
   list.removeChild(selectedTask);
   showMsg("Task deleted successfully!", "delete");
-
+  showScroll();
   //? Remove Task From Local Storage....
   //   const taskId = selectedTask.id;
   const tasks = getTasksFromLocalStorage();
