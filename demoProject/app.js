@@ -31,6 +31,26 @@ let arr2 = [4, 5, 6];
 let combinedArr = [...arr1, ...arr2];
 console.log(combinedArr);
 
+const man = {
+  name: "John",
+  age: 30,
+};
+const man2 = {
+  ...man,
+  city: "New York",
+};
+console.log(man2);
+//! Rest Operator....
+
+function sum(...nums) {
+  let total = 0;
+  for (let num of nums) {
+    total += num;
+  }
+  return total;
+}
+console.log(sum(1, 2, 3, 4, 5));
+
 //! Array Destructuring...
 
 let book = ["Advance JS", 200, 150];
